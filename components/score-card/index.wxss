@@ -1,0 +1,31 @@
+.score-card {
+  border: 1rpx solid #dbe8dd;
+  border-radius: 28rpx;
+  padding: 24rpx;
+  background: #ffffff;
+}
+
+.score-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 16rpx;
+  margin-bottom: 12rpx;
+}
+
+.score-name {
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #1e2a22;
+}
+
+.score-value {
+  color: #4d6a53;
+  font-size: 24rpx;
+  font-weight: 700;
+}
+
+.score-description {
+  color: #6a786f;
+  font-size: 24rpx;
+  line-height: 1.7;
+}

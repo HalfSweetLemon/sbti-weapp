@@ -1,0 +1,9 @@
+<view class="page-shell home-shell">
+  <view class="card hero-card">
+    <text class="hero-title">MBTI已经过时，SBTI来了。</text>
+    <button class="btn-primary hero-button" bindtap="handleStart">{{hasSession ? '继续测试' : '开始测试'}}</button>
+    <view class="hero-meta">
+      <text>原作者：B站@蛆肉儿串儿</text>
+    </view>
+  </view>
+</view>

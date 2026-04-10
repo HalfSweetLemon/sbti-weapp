@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "SBTI 测试中",
+  "usingComponents": {
+    "progress-bar": "/components/progress-bar/index"
+  }
+}

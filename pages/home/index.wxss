@@ -1,0 +1,35 @@
+.home-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-card {
+  width: 100%;
+  padding: 56rpx 40rpx;
+  text-align: center;
+}
+
+.hero-title {
+  display: block;
+  font-size: 56rpx;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-button {
+  margin-top: 40rpx;
+}
+
+.hero-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+  margin-top: 48rpx;
+  color: #6a786f;
+  font-size: 24rpx;
+}
+
+.card {}
+.btn-primary {}
+.btn-secondary {}

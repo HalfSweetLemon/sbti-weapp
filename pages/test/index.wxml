@@ -1,0 +1,26 @@
+<view class="page-shell">
+  <view class="card test-card">
+    <progress-bar done="{{done}}" total="{{total}}" percent="{{percent}}" />
+    <block wx:for="{{visibleQuestions}}" wx:key="id">
+      <view class="question-card">
+        <view class="question-head">
+          <text class="badge">第 {{item.questionIndex}} 题</text>
+          <text class="question-meta">{{item.metaLabel}}</text>
+        </view>
+        <text class="question-title">{{item.text}}</text>
+        <radio-group data-id="{{item.id}}" bindchange="handleAnswerChange">
+          <label class="option" wx:for="{{item.options}}" wx:key="value">
+            <radio value="{{item.value}}" checked="{{item.checked}}" color="#4d6a53" />
+            <text class="option-code">{{item.optionCode}}</text>
+            <text class="option-text">{{item.label}}</text>
+          </label>
+        </radio-group>
+      </view>
+    </block>
+    <text class="hint-text">{{hint}}</text>
+    <view class="actions-row">
+      <button class="btn-secondary action-button" bindtap="handleBackHome">返回首页</button>
+      <button class="btn-primary action-button" bindtap="handleSubmit" disabled="{{!complete}}">提交并查看结果</button>
+    </view>
+  </view>
+</view>

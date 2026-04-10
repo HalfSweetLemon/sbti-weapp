@@ -1,0 +1,36 @@
+<view class="page-shell">
+  <view class="card result-card">
+    <view class="result-top">
+      <image class="result-image" src="{{typeImage}}" mode="aspectFit" />
+      <view class="type-box">
+        <text class="type-kicker">{{result.modeKicker}}</text>
+        <text class="type-name">{{result.finalType.code}}（{{result.finalType.cn}}）</text>
+        <text class="match-badge">{{result.badge}}</text>
+        <text class="type-sub">{{result.sub}}</text>
+      </view>
+    </view>
+
+    <view class="section-card">
+      <text class="section-title">该人格的简单解读</text>
+      <text class="section-copy">{{result.finalType.desc}}</text>
+    </view>
+
+    <view class="section-card">
+      <text class="section-title">十五维度评分</text>
+      <view class="score-list">
+        <score-card wx:for="{{dimensionCards}}" wx:key="id" name="{{item.name}}" level="{{item.level}}" score="{{item.score}}" description="{{item.description}}" />
+      </view>
+    </view>
+
+    <view class="section-card">
+      <text class="section-title">友情提示</text>
+      <text class="section-copy">{{result.funNote}}</text>
+    </view>
+
+    <view class="actions-row">
+      <button class="btn-secondary action-button" bindtap="handleRestart">重新测试</button>
+      <button class="btn-primary action-button" bindtap="handleBackHome">回到首页</button>
+    </view>
+
+  </view>
+</view>

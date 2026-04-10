@@ -1,0 +1,43 @@
+page {
+  min-height: 100%;
+  background: radial-gradient(circle at top left, #f8fff8 0%, #f6faf6 36%, #f2f7f3 100%);
+  color: #1e2a22;
+  font-size: 28rpx;
+}
+
+.page-shell {
+  padding: 24rpx;
+}
+
+.card {
+  background: #ffffff;
+  border: 1rpx solid #dbe8dd;
+  border-radius: 32rpx;
+  box-shadow: 0 16rpx 40rpx rgba(47, 73, 55, 0.08);
+}
+
+.btn-primary,
+.btn-secondary {
+  margin: 0;
+  padding: 0 32rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+  line-height: 88rpx;
+  border-radius: 28rpx;
+}
+
+.btn-primary {
+  background: #4d6a53;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #4d6a53;
+  border: 1rpx solid #dbe8dd;
+}
+
+.btn-primary::after,
+.btn-secondary::after {
+  border: 0;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "测试结果",
+  "usingComponents": {
+    "score-card": "/components/score-card/index"
+  }
+}

@@ -1,0 +1,7 @@
+<view class="score-card">
+  <view class="score-top">
+    <text class="score-name">{{name}}</text>
+    <text class="score-value">{{level}} / {{score}}分</text>
+  </view>
+  <text class="score-description">{{description}}</text>
+</view>
